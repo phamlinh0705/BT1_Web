@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Năm 4 - Kì 1\Web\Xem_TuVi\WebApplication1</_PublishTargetUrl>
+    <History>True|2025-09-28T10:51:05.9525069Z||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="api.aspx">
+      <publishTime>09/28/2025 17:43:46</publishTime>
+    </File>
+    <File Include="bin/ClassLibrary1.dll">
+      <publishTime>09/28/2025 17:36:13</publishTime>
+    </File>
+    <File Include="bin/ClassLibrary1.pdb">
+      <publishTime>09/28/2025 17:36:13</publishTime>
+    </File>
+    <File Include="bin/WebApplication1.dll">
+      <publishTime>09/28/2025 17:51:05</publishTime>
+    </File>
+    <File Include="bin/WebApplication1.pdb">
+      <publishTime>09/28/2025 17:51:05</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>09/28/2025 16:27:03</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/28/2025 17:51:05</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

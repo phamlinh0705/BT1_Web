@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Năm 4 - Kì 1\Web\web</_PublishTargetUrl>
+    <History>True|2025-09-28T10:48:04.2177981Z||;True|2025-09-28T17:36:14.1800519+07:00||;True|2025-09-28T16:46:42.4809167+07:00||;True|2025-09-28T16:20:55.5200874+07:00||;True|2025-09-28T16:18:12.3208882+07:00||;True|2025-09-28T16:15:20.4795283+07:00||;True|2025-09-28T16:07:54.6888894+07:00||;True|2025-09-28T16:02:30.4391795+07:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="api.aspx">
+      <publishTime>09/28/2025 17:43:46</publishTime>
+    </File>
+    <File Include="bin/ClassLibrary1.dll">
+      <publishTime>09/28/2025 17:36:13</publishTime>
+    </File>
+    <File Include="bin/ClassLibrary1.pdb">
+      <publishTime>09/28/2025 17:36:13</publishTime>
+    </File>
+    <File Include="bin/WebApplication1.dll">
+      <publishTime>09/28/2025 17:48:04</publishTime>
+    </File>
+    <File Include="bin/WebApplication1.pdb">
+      <publishTime>09/28/2025 17:48:04</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>09/28/2025 16:27:03</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/28/2025 17:48:04</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

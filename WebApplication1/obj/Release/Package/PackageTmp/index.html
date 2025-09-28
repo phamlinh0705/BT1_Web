@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Funny Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background: linear-gradient(to right, #83a4d4, #b6fbff);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        input, button {
+            margin: 5px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            min-height: 30px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <h2>Funny Web App</h2>
+    <input type="text" id="name" placeholder="Nhập tên" />
+    <input type="number" id="number" placeholder="Nhập số may mắn" />
+    <button onclick="sendData()">Xem kết quả</button>
+
+    <div id="result">👉 Kết quả sẽ hiển thị ở đây...</div>
+
+    <script>
+        function sendData() {
+            var name = document.getElementById("name").value;
+            var number = document.getElementById("number").value;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/funny/api.aspx", true);
+
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        try {
+                            var json = JSON.parse(xhr.responseText);
+                            document.getElementById("result").innerText = json.message;
+                        } catch (e) {
+                            document.getElementById("result").innerText = "❌ Lỗi khi đọc dữ liệu từ server!";
+                        }
+                    } else {
+                        document.getElementById("result").innerText = "❌ Lỗi server: " + xhr.status;
+                    }
+                }
+            };
+
+            xhr.send("name=" + encodeURIComponent(name) + "&number=" + encodeURIComponent(number));
+        }
+    </script>
+</body>
+</html>
